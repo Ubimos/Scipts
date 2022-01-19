@@ -1,4 +1,10 @@
 local library = {count = 0, queue = {}, callbacks = {}, rainbowtable = {}, toggled = true, binds = {}};
+for fk, fl in pairs(game:GetService("CoreGui"):GetDescendants()) do
+  if fl.Name == "HiI'mSexyDon'tTouchMePls" then
+    fl.Parent:Destroy()
+  end
+end
+Instance.new("ScreenGui").Name = "HiI'mSexyDon'tTouchMePls"
 local defaults; do
     local dragger = {}; do
         local mouse        = game:GetService("Players").LocalPlayer:GetMouse();
