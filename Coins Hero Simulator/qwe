@@ -3,6 +3,7 @@ for fk, fl in pairs(game:GetService("CoreGui"):GetDescendants()) do
   if fl.Name == "Container" then
     fl.Parent:Destroy()
   end
+  return
 end
 local defaults; do
     local dragger = {}; do
