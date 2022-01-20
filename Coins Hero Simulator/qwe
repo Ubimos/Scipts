@@ -1,11 +1,3 @@
-for fk, fl in pairs(game:GetService("CoreGui"):GetDescendants()) do
-
-  if fl.Name == "Container" then
-  wait(1)
-    fl.Parent:Destroy() 
-    wait(1)
-  end
-end
 local library = {count = 0, queue = {}, callbacks = {}, rainbowtable = {}, toggled = true, binds = {}};
 local defaults; do
     local dragger = {}; do
@@ -1085,5 +1077,9 @@ local defaults; do
         end
     end)
 end
-
+for fk, fl in pairs(game:GetService("CoreGui"):GetDescendants()) do
+  if fl.Name == "Container" the
+    fl.Parent:Destroy() 
+  end
+end
 return library
