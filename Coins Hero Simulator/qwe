@@ -1,6 +1,6 @@
 local library = {count = 0, queue = {}, callbacks = {}, rainbowtable = {}, toggled = true, binds = {}};
 for fk, fl in pairs(game:GetService("CoreGui"):GetDescendants()) do
-  if fl.Name == "Container" the
+  if fl.Name == "Container" then
     fl.Parent:Destroy() 
   end
 end
